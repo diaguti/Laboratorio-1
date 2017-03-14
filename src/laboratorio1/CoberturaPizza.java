@@ -6,10 +6,11 @@
 package laboratorio1;
 
 /**
- * @author Diego Alejandro Gutierrez
- * @author Lina
- * @author Dieg
- * @author julian
+ * Clase que conecta los diferentes tipos de pizza y modifica el precio segun lo agregado.
+ * @author Diego Alejandro Gutierrez Rojas
+ * @author Lina Paola Correa Ballen
+ * @author Diego Alexander Ramirez Vela
+ * @author Julian David Escobar Jamioy
  */
 public class CoberturaPizza {
 
@@ -17,25 +18,25 @@ public class CoberturaPizza {
     private Prefab pizzaPrefab;
 
     /**
-     *
-     * @param pizza
+     * Constructor con el tipo de pizza DoItYourself
+     * @param pizza del tipo de pizza DoItYourself 
      */
     public CoberturaPizza(DoItYourself pizza) {
         this.pizzaDoIt = pizza;
     }
 
     /**
-     *
-     * @param pizza
+     * Constructor con el tipo de pizza Prefab
+     * @param pizza del tipo de pizza Prefab
      */
     public CoberturaPizza(Prefab pizza) {
         this.pizzaPrefab = pizza;
     }
 
     /**
-     *
-     * @param pizza
-     * @param cobertura
+     * Metodo para modificar el precio total de la pizza de tipo DoItYourself
+     * @param pizza De tipo pizza DoItYourself para obtener el precio hasta ese momento de dicha pizza y poderlo modificar
+     * @param cobertura De tipo Cobertura para obtener el precio de la cobertura y poderlo adicionar al precio total de la pizza.
      */
     public void addCoberturaDoIt(DoItYourself pizza, Cobertura cobertura) {
         int precioTotal = pizzaDoIt.getPrecioTotal();
@@ -45,10 +46,10 @@ public class CoberturaPizza {
     }
 
     /**
-     *
-     * @param pizza
-     * @param tamaño
-     * @param basePizza
+     * Metodo para modificar el precio total de la pizza de tipo Prefab
+     * @param pizza De tipo pizza Prefab para obtener el precio de la pizza Prefab
+     * @param tamaño Entero con el tamaño deseado de la pizza y asi poderle sumar ese valor al precio total de la pizza
+     * @param basePizza Int con la opcion deseada para la base de la pizza.
      */
     public void addCoberturaPrefab(Prefab pizza, int tamaño, int basePizza) {
         pizzaPrefab.setOpcBase(basePizza);

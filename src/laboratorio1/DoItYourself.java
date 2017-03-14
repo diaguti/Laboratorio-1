@@ -6,22 +6,23 @@
 package laboratorio1;
 
 /**
- * @author Diego Alejandro Gutierrez
- * @author Lina
- * @author Dieg
- * @author julian
+ * Clase base para crear las pizzas de tipo DoItYourself
+ * @author Diego Alejandro Gutierrez Rojas
+ * @author Lina Paola Correa Ballen
+ * @author Diego Alexander Ramirez Vela
+ * @author Julian David Escobar Jamioy
  */
 public class DoItYourself {
 
     private int tamaño;
-    private int opcion;
     private int precioMin;
     private int precioTotal;
     private int opcBase;
 
     /**
-     * @param tamaño
-     * @param opcBase
+     * Constructor de las pizzas DoItYourself
+     * @param tamaño Entero para asignar el tamaño de la pizza.
+     * @param opcBase Entero para asignar la base deseada de la pizza.
      */
     public DoItYourself(int tamaño, int opcBase) {
         this.opcBase = opcBase;
@@ -32,7 +33,7 @@ public class DoItYourself {
 
     /**
      *
-     * @return
+     * @return el tamaño de la pizza
      */
     public int getTamaño() {
         return tamaño;
@@ -40,7 +41,7 @@ public class DoItYourself {
 
     /**
      *
-     * @param tamaño
+     * @param tamaño Entero para asignar el tamaño a la pizza DoItYourself
      */
     public void setTamaño(int tamaño) {
         this.tamaño = tamaño;
@@ -48,23 +49,7 @@ public class DoItYourself {
 
     /**
      *
-     * @return
-     */
-    public int getOpcion() {
-        return opcion;
-    }
-
-    /**
-     *
-     * @param opcion
-     */
-    public void setOpcion(int opcion) {
-        this.opcion = opcion;
-    }
-
-    /**
-     *
-     * @return
+     * @return precio minimo de la pizza sin coberturas
      */
     public int getPrecioMin() {
         return precioMin;
@@ -72,7 +57,7 @@ public class DoItYourself {
 
     /**
      *
-     * @param precioMin
+     * @param precioMin Entero para asignar el precio minimo a la pizza DoItYourself
      */
     public void setPrecioMin(int precioMin) {
         this.precioMin = precioMin;
@@ -80,7 +65,7 @@ public class DoItYourself {
 
     /**
      *
-     * @return
+     * @return precio total de la pizza adicionandoles todas las coberturas deseadas
      */
     public int getPrecioTotal() {
         return precioTotal;
@@ -88,7 +73,7 @@ public class DoItYourself {
 
     /**
      *
-     * @param precioTotal
+     * @param precioTotal Entero para asignar el precio total a la pizza DoItYourself
      */
     public void setPrecioTotal(int precioTotal) {
         this.precioTotal = precioTotal;
@@ -96,7 +81,7 @@ public class DoItYourself {
 
     /**
      *
-     * @return
+     * @return opcion que indica la base deseada
      */
     public int getOpcBase() {
         return opcBase;
@@ -104,11 +89,9 @@ public class DoItYourself {
 
     /**
      *
-     * @param opcBase
+     * @param opcBase Entero para asignar la base deseada
      */
     public void setOpcBase(int opcBase) {
         this.opcBase = opcBase;
-    }
-    
-    
+    }   
 }

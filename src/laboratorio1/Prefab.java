@@ -6,10 +6,11 @@
 package laboratorio1;
 
 /**
- * @author Diego Alejandro Gutierrez
- * @author Lina
- * @author Dieg
- * @author julian
+ * Clase base para las pizzas de tipo Prefab
+ * @author Diego Alejandro Gutierrez Rojas
+ * @author Lina Paola Correa Ballen
+ * @author Diego Alexander Ramirez Vela
+ * @author Julian David Escobar Jamioy
  */
 public class Prefab {
 
@@ -20,9 +21,9 @@ public class Prefab {
     private int precioTotal;
 
     /**
-     *
-     * @param precio
-     * @param nombre
+     * Constructor de las pizzas Prefab
+     * @param precio Entero para asignar el precio a la pizza Prefab
+     * @param nombre String para asignar el nombre a la pizza Prefab
      */
     public Prefab(int precio, String nombre) {
         this.precio = precio;
@@ -32,7 +33,7 @@ public class Prefab {
 
     /**
      *
-     * @return
+     * @return tamaño de la pizza Prefab
      */
     public int getTamaño() {
         return tamaño;
@@ -40,7 +41,7 @@ public class Prefab {
 
     /**
      *
-     * @param tamaño
+     * @param tamaño Entero para asignar el tamaño de la pizza Prefab
      */
     public void setTamaño(int tamaño) {
         this.tamaño = tamaño;
@@ -48,7 +49,7 @@ public class Prefab {
 
     /**
      *
-     * @return
+     * @return base deseada de la pizza Prefab
      */
     public int getOpcBase() {
         return opcBase;
@@ -56,7 +57,7 @@ public class Prefab {
 
     /**
      *
-     * @param opcBase
+     * @param opcBase Entero para asignar la base deseada a la pizza Prefab
      */
     public void setOpcBase(int opcBase) {
         this.opcBase = opcBase;
@@ -64,7 +65,7 @@ public class Prefab {
 
     /**
      *
-     * @return
+     * @return precio de la pizza Prefab sin tamaño
      */
     public int getPrecio() {
         return precio;
@@ -72,7 +73,7 @@ public class Prefab {
 
     /**
      *
-     * @param precio
+     * @param precio Entero para asignar el precio a la pizza Prefab sin tamaño
      */
     public void setPrecio(int precio) {
         this.precio = precio;
@@ -80,7 +81,7 @@ public class Prefab {
 
     /**
      *
-     * @return
+     * @return nombre de la pizza 
      */
     public String getNombre() {
         return nombre;
@@ -88,7 +89,7 @@ public class Prefab {
 
     /**
      *
-     * @param nombre
+     * @param nombre String para asignar el nombre a la pizza prefab
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -96,7 +97,7 @@ public class Prefab {
 
     /**
      *
-     * @return
+     * @return precio total de la pizza adicionandole el precio con el tamaño
      */
     public int getPrecioTotal() {
         return precioTotal;
@@ -104,7 +105,7 @@ public class Prefab {
 
     /**
      *
-     * @param precioTotal
+     * @param precioTotal Entero para asignar el valor total a la pizza Prefab con el tamaño incluido
      */
     public void setPrecioTotal(int precioTotal) {
         this.precioTotal = precioTotal;

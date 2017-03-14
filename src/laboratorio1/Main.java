@@ -9,10 +9,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * @author Diego Alejandro Gutierrez
- * @author Lina
- * @author Dieg
- * @author julian
+ * Clase principal desde donde se genera el menu que se le mostrara al cliente y sera creando todo el pedido
+ * @author Diego Alejandro Gutierrez Rojas
+ * @author Lina Paola Correa Ballen
+ * @author Diego Alexander Ramirez Vela
+ * @author Julian David Escobar Jamioy
  */
 public class Main {
 

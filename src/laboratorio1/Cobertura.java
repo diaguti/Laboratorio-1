@@ -1,15 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package laboratorio1;
 
 /**
- * @author Diego Alejandro Gutierrez
- * @author Lina
- * @author Dieg
- * @author julian
+ * Clase base para crear las coberturas de la pizza.
+ * @author Diego Alejandro Gutierrez Rojas
+ * @author Lina Paola Correa Ballen
+ * @author Diego Alexander Ramirez Vela
+ * @author Julian David Escobar Jamioy
  */
 public class Cobertura {
 
@@ -17,9 +13,9 @@ public class Cobertura {
     private int precioCobertura;
 
     /**
-     *
-     * @param nombreCobertura
-     * @param precioCobertura
+     * Constructor de las coberturas
+     * @param nombreCobertura String para asignar el nombre de la cobertura.
+     * @param precioCobertura Entero para asignar el precio de la cobertura.
      */
     public Cobertura(String nombreCobertura, int precioCobertura) {
 
@@ -29,7 +25,7 @@ public class Cobertura {
 
     /**
      *
-     * @return
+     * @return nombre de la cobertura
      */
     public String getNombreCobertura() {
         return nombreCobertura;
@@ -37,7 +33,7 @@ public class Cobertura {
 
     /**
      *
-     * @param nombreCobertura
+     * @param nombreCobertura String para asignar el nombre de la cobertura
      */
     public void setNombreCobertura(String nombreCobertura) {
         this.nombreCobertura = nombreCobertura;
@@ -45,7 +41,7 @@ public class Cobertura {
 
     /**
      *
-     * @return
+     * @return precio de la cobertura
      */
     public int getPrecioCobertura() {
         return precioCobertura;
@@ -53,7 +49,7 @@ public class Cobertura {
 
     /**
      *
-     * @param precioCobertura
+     * @param precioCobertura Entero para asignar el precio de la cobertura
      */
     public void setPrecioCobertura(int precioCobertura) {
         this.precioCobertura = precioCobertura;
