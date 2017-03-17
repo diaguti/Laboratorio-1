@@ -5,8 +5,12 @@
  */
 package laboratorio1;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * Clase principal desde donde se genera el menu que se le mostrara al cliente y sera creando todo el pedido
@@ -16,11 +20,30 @@ import java.util.Scanner;
  * @author Julian David Escobar Jamioy
  */
 public class Main {
-
+//    Timer timer = new Timer();
+    public int segundos;
+    public boolean frozen;
+    
+//    public void run(){
+//        segundos++;
+//        System.out.println(segundos);
+//    }
+//    
+//    public void start(int pSeg){
+//        timer.schedule(run(), 1000);
+//    }
+//    public void run(){
+//        int tiempo;
+//        Timer timer = new Timer(tiempo, new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//            }
+//        });
+//    }
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Scanner sc = new Scanner(System.in);
         int base;
         int basePizza = 0;
@@ -32,7 +55,7 @@ public class Main {
         int tipo;
         int sumad = 0;
         int sumap = 0;
-        int sumab = 0;
+        int sumab = 0;        
         ArrayList<DoItYourself> doit = new ArrayList<>();
         ArrayList<Prefab> prefab = new ArrayList<>();
         ArrayList<Bebidas> bebidas = new ArrayList<>();
@@ -244,6 +267,43 @@ public class Main {
             sumab = sumab + bebidas.get(i).getPrecioTotal();
         }
         System.out.println("El precio de las bebidas es: " + sumab);
-        System.out.println("la suma total es: " + (sumad + sumap + sumab));
+        System.out.println("El precio total de su pedido es: " + (sumad + sumap + sumab));
+        
+        if (sumad != 0 ) {
+            for (int i = 0; i < doit.size(); i++) {
+                System.out.println("");
+                System.out.println("Se esta preparando la pizza DoItYourself numero " + (i+1));               
+                System.out.println("Preparando la base deseada...");
+                 Thread.sleep(4000);                
+                System.out.println("Cortando al tamaño deseado...");
+                Thread.sleep(1000);
+                System.out.println("Aplicando las coberturas escogidas...");
+                Thread.sleep(3000);
+                System.out.println("Hemos terminado la pizza DoItYourself numero " + (i+1));
+            }
+        }
+        if (sumap != 0) {
+            for (int i = 0; i < prefab.size(); i++) {
+                System.out.println("");
+                System.out.println("Se esta preparando la pizza Prefab numero " + (i+1));               
+                System.out.println("Preparando la base deseada...");
+                 Thread.sleep(4000);                
+                System.out.println("Cortando al tamaño deseado...");
+                Thread.sleep(1000);                
+                System.out.println("Hemos terminado la pizza DoItYourself numero " + (i+1));
+            }
+        }
+        if (sumab != 0) {
+            for (int i = 0; i < bebidas.size(); i++) {
+                System.out.println("");
+                System.out.println("Se esta preparando la bebida numero " + (i+1));               
+                System.out.println("Seleccionando el tamaño deseado...");
+                 Thread.sleep(500);                
+                System.out.println("Sirviendo el sabor seleccionado.");
+                Thread.sleep(1000);                
+                System.out.println("Hemos terminado de servir su bebida");
+            }
+        }
+        
     }
 }
